@@ -127,7 +127,6 @@ def mortality_rating(names, deaths):
             output[names[location]] = rank
     return output
 ratings = mortality_rating(names, deaths)
-print(ratings)
 
 # Calculating Hurricane Maximum Damage
 def max_damage(names, damages):
@@ -155,4 +154,3 @@ def damage_rating(names, damages):
         rank = sorted(temp_values).index(damage)
         output[names[location]] = rank
     return output
-print(damage_rating(names,clean_damage))
